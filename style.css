@@ -1,0 +1,193 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Segoe UI";
+  background: #fff;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 600px;
+  padding: 30px 50px;
+  margin: 100px auto 0;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.header__title {
+  color: #3c3b62;
+  font-weight: 600;
+}
+
+.header__left {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.header__right {
+  flex: 0 0 auto; /* by default, not needed */
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__li {
+  margin-left: 10px;
+}
+
+.nav-button {
+  color: #777;
+  border: 2px solid transparent;
+  background: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.nav-button:hover,
+.nav-button--current {
+  border-color: #c7c8ea;
+}
+
+.button {
+  background: transparent;
+  border-radius: 100%;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.button--add {
+  background: #3c3b62;
+  color: #fff;
+}
+
+.button--check {
+  font-size: 20px;
+  padding-top: 2px;
+  line-height: 30px;
+  float: left;
+  transform: scale(0.75);
+  box-shadow: inset 0 0 0 2px #ccc;
+  color: #fff;
+}
+
+.button--delete {
+  color: red;
+  float: right;
+}
+
+/* Without BEM on purpose, do not write code like this in production */
+form {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  font-size: 22px;
+  font-weight: 300;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
+form input:focus {
+  border-color: #aaa;
+}
+form input::placeholder {
+  font-style: italic;
+}
+
+form button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 120px;
+}
+
+.list--active .list__item--complete {
+  display: none;
+}
+.list--completed li:not(.list__item--complete) {
+  display: none;
+}
+
+.list__item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.list__text {
+  color: #555;
+  margin: 5px 45px 6px;
+}
+
+.list__item--complete .list__button-check {
+  background: #82d058;
+  box-shadow: none;
+  position: relative;
+  top: -4px;
+  margin-right: 10px;
+}
+
+.footer__left {
+  float: left;
+}
+
+.footer__right {
+  float: right;
+}
+
+.footer p {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin: 0px;
+}
+
+.button-clear-completed {
+  background: transparent;
+  border: 0px;
+  font-size: 18px;
+  color: #5a5a5a;
+  font-family: "Segoe UI";
+}

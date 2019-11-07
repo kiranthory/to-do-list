@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__left">
+          <h1 class="header__title">Todo List</h1>
+        </div>
+        <div class="header__right">
+          <ul class="nav">
+            <li class="nav__li nav-button nav-button--current nav__button--all">
+              All
+            </li>
+            <li class="nav__li nav-button nav__button--active">Active</li>
+            <li class="nav__li nav-button nav__button--completed">Completed</li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="form">
+        <input autofocus type="text" placeholder="What need to be done?" />
+        <button type="submit" class="button button--add ">+</button>
+      </form>
+
+      <ul class="list list__all"></ul>
+
+      <footer class="footer">
+        <div class="footer__left">
+          <p class="item__left">2 Items Left</p>
+        </div>
+        <div class="footer__right">
+          <button class="button-clear-completed">Clear completed</button>
+        </div>
+        <div style="clear:both"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
